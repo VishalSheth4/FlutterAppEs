@@ -5,7 +5,7 @@ import 'screens/forgot_password/forgot_password_screen.dart';
 import 'screens/guest/guest_screen.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -17,14 +17,14 @@ class MyApp extends StatelessWidget {
       title: 'E-Mart',
       initialRoute: '/login',
       routes: {
-        '/login': (context) => Loginscreen(),
-        '/create-account': (context) => CreateAccountPage(),
-        '/forgot-password': (context) => ForgotPasswordScreen(),
-        '/guest': (context) => GuestScreen(),
+        '/login': (context) => const LoginScreen(),
+        '/create-account': (context) => const CreateAccountPage(),
+        '/forgot-password': (context) => const ForgotPasswordScreen(),
+        '/guest': (context) => const GuestScreen(),
       },
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
     );
   }
-} 
+}

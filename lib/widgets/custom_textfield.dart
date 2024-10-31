@@ -7,7 +7,7 @@ class CustomTextField extends StatelessWidget {
   final TextEditingController controller;
   final TextInputType keyboardType;
 
-  CustomTextField({
+  const CustomTextField({super.key, 
     required this.labelText,
     this.isPassword = false,
     required this.controller,
