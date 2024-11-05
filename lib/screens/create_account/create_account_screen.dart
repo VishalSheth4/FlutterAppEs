@@ -14,7 +14,7 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
   final TextEditingController passwordController = TextEditingController();
   final TextEditingController confirmPasswordController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
-  bool _isLoading = false;
+  final bool _isLoading = false;
 
   void createAccount(BuildContext context) {
     if (_formKey.currentState!.validate()) {
